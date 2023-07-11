@@ -1,0 +1,19 @@
+.posts-page {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 90vw;
+    margin: auto;
+}
+
+.post-card {
+    flex: 1 0 300px;
+    border: 1px solid white;
+    border-radius: .33rem;
+}
+
+.post-id {
+    font-size: .66rem;
+}
+
+.post-title {}
+.post-content {}
