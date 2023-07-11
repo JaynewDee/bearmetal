@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-links {
+  position: absolute;
+  right: .33rem;
+  top: .33rem;
+  width: 7rem; 
+  background: linear-gradient(235deg, var(--prime-color), white);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links > a {
+  margin: .11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.house-icon,
+.book-icon {
+  font-size: 1rem;  
+}
+
+

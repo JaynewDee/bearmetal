@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:wght@700&display=swap');
+
+:root {
+   line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+ 
+	--bg-color: rgba(15, 20, 25, 1);
+	--bg-darker: rgba(10, 15, 20, 1);
+	--prime-color: rgba(0, 194, 209, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --prime-font: 'Share Tech Mono', monospace;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--bg-color);
+	font-family: var(--prime-font)
+}
+
+.App {
+	margin: 0;
+	background-color: var(--prime-color);
+}
+
+.header-container {
+	margin-bottom: 3rem;
+	display: flex;
+	align-items: flex-end;
+	background-color: var(--bg-darker);
+	box-shadow: 0px 1px 12px 1px rgba(5, 5, 5, .8);
+}
+
+.header-left {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	color: var(--prime-color);
+	flex: 1 0 50%;
+}
+
+.header-left>h1 {
+	margin-top: 0;
+}
+
+.header-left>h1::after {
+	content: "BEAR";
+	position: absolute;
+	z-index: 3;
+	color: white;
+	opacity: .2;
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+.header-right {
+	flex: 1 0 50%;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--prime-color);
+}
+
+.header-right>h1 {
+	margin-bottom: 0;
+}
+
+.header-right>h1::before {
+	content: "METAL";
+	position: absolute;
+	margin-left: -5.5rem;
+	z-index: 3;
+	color: white;
+	opacity: .1;
+	-moz-transform: scale(-1, -1);
+	-webkit-transform: scale(-1, -1);
+	-o-transform: scale(-1, -1);
+	-ms-transform: scale(-1, -1);
+	transform: scale(-1, 1);
+}
+
+.nav-icons {
+	display: flex;
+	height: 5rem;
+	color: white;
+	cursor: pointer;
+	margin-right: 1rem;
+	margin-bottom: 0;
+}
+
+.nav-icons>svg,
+.nav-icons>a>svg {
+	margin: 0 .33rem auto;
+}
